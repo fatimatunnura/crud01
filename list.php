@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost", "root", "rini07", "students");
+$link = mysqli_connect("localhost", "root", "lict@2", "students");
 $query = "SELECT * FROM users;";
 $result = mysqli_query($link, $query);
 ?>
