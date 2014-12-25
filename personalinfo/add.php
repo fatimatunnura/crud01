@@ -2,6 +2,11 @@
 
 $fullname = $_POST['fullname'];
 $fathername=$_POST['fathername'];
+$mothername=$_POST['mothername'];
+$religion=$_POST['religion'];
+$contact=$_POST['contact'];
+$gender=$_POST['gender'];
+$hometown=$_POST['hometown'];
 
 
 $link = mysqli_connect("localhost",
@@ -14,13 +19,22 @@ $link = mysqli_connect("localhost",
 $query = "INSERT INTO `FTFL`.`personalinfo` (
 
 `fullname`,
-`fathername`
-
+`fathername`,
+`mothername`,
+`religion`,
+`contact`,
+`gender`,
+`hometown`
 
 )
 VALUES (
      '$fullname',
      '$fathername',
+     '$mothername',
+     '$religion',
+     '$contact',
+     '$gender',
+     '$hometown'
 
 );";
 

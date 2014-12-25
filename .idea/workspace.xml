@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75084f62-3d54-4533-8544-02d8ee9ed4e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/store.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/C_of_ CRUD/add_email.php" afterPath="$PROJECT_DIR$/C_of_ CRUD/add_email.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crud01.iws" />
@@ -89,10 +82,10 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personalinfo/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7307692" vertical-offset="0" max-vertical-offset="510">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7692308" vertical-offset="165" max-vertical-offset="555">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <marker date="1419531261571" expanded="true" signature="130:209" placeholder="INSERT INTO ..." />
+                <marker date="1419532046635" expanded="true" signature="163:278" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -137,8 +130,8 @@
       <file leaf-file-name="store.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.875" vertical-offset="102" max-vertical-offset="765">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="765">
+              <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <marker date="1419531261591" expanded="true" signature="311:572" placeholder="INSERT INTO ..." />
               </folding>
@@ -409,7 +402,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1419531261571" expanded="true" signature="130:209" placeholder="INSERT INTO ..." />
+            <marker date="1419532046635" expanded="true" signature="163:278" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -766,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.875" vertical-offset="102" max-vertical-offset="765">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="765">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <marker date="1419531261591" expanded="true" signature="311:572" placeholder="INSERT INTO ..." />
           </folding>
@@ -776,10 +769,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/personalinfo/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7307692" vertical-offset="0" max-vertical-offset="510">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7692308" vertical-offset="165" max-vertical-offset="555">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <marker date="1419531261571" expanded="true" signature="130:209" placeholder="INSERT INTO ..." />
+            <marker date="1419532046635" expanded="true" signature="163:278" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
