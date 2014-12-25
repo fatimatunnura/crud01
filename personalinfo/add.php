@@ -1,7 +1,7 @@
 <?php
 
 $fullname = $_POST['fullname'];
-
+$fathername=$_POST['fathername'];
 
 
 $link = mysqli_connect("localhost",
@@ -13,11 +13,14 @@ $link = mysqli_connect("localhost",
 
 $query = "INSERT INTO `FTFL`.`personalinfo` (
 
-`fullname`
+`fullname`,
+`fathername`
+
 
 )
 VALUES (
-     '$fullname'
+     '$fullname',
+     '$fathername',
 
 );";
 
