@@ -1,7 +1,7 @@
 <?php
 
 $email = $_POST['email'];
-$link = mysqli_connect("localhost", "root", "lict@2", "crud03");
+$link = mysqli_connect("localhost", "root", "rini07", "crud03");
 
 if (mysqli_connect_errno())
 {
