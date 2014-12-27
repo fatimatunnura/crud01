@@ -1,19 +1,13 @@
 <?php
+//This is a crud application with view.php file
 
-$id= $_GET['id'];
+$con=mysqli_connect("localhost","root","lict@2","contactinfo") or die("Error: ".mysqli_error($con));
 
-$link = mysqli_connect("localhost",
-    "root",
-    "lict@2",
-    "contact_info");
-
-$query = "SELECT * FROM `student` WHERE `id`=$id";
-
-$result = mysqli_query($link, $query);
-
+$id = $_GET['id'];
+$query = "SELECT * FROM information WHERE id = $id";
+$result = mysqli_query($con, $query);
 $row = mysqli_fetch_assoc($result);
 print_r($row);
-
-
 ?>
-<a href="list.php">Go to Home</a>
+<br />
+<a href="list.php">Go to List</a>

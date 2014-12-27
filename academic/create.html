@@ -1,56 +1,43 @@
+<h4>Academic Information</h4>
+<hr>
 <html>
-
 <body>
-<form action="add.php" method="POST">
+<form action="add.php"method = 'POST'>
 
-    <label>Level_of_education:</label>
-    <input type="text" name="level_of_education" />
+    <label>Level of Education</label><span>*</span>
+    <select name="levelofeducation">
+        <option value="B.Sc(Engr)">B.Sc(Engr)</option>
+        <option value="diploma">diploma</option>
+        <option value="B.Sc(honrs)">B.Sc(honrs)</option>
+
+    </select></br>
     <br>
-
-    <label>Exam_title:</label>
-    <input type="text" name="exam_title" />
+    <label>Exam Title:</label>
+    <input type ="text" name = "examtitle">
     <br>
-
-    <label>Group_Subject:</label>
-    <input type="text" name="group_subject"/>
+    <label>Group:</label>
+    <input type ="text" name = "group">
     <br>
-
-
-    <label>Institution:</label>
-    <input type="txt" name="institution" />
+    <label>Institute:</label>
+    <input type ="text" name = "institute">
     <br>
-    <label>Result_type:</label>
-    <input type="txt" name="result_type" />
-    <br>
-
     <label>Result:</label>
-    <input type="txt" name="result" />
-    <br>
-
-
-    <label>Scale:</label>
-    <input type="int" name="scale" />
-    <br>
-
-    <label>Passing_year:</label>
-    <input type="int" name="passing_year" />
-    <br>
-
-    <label>Duration(in year):</label>
-    <input type="int" name="duration" />
-    <br>
-
-
+    <input type ="text" name = "results">
+    <label>scale:</label>
+    <input type ="text" name = "scale">
+    <label>Passing Year:</label>
+    <input type ="text" name = "passingyear">
+    <label>Duration:</label>
+    <input type ="text" name = "duration">
     <label>Achievement:</label>
-    <input type="txt" name="achievement" />
-    <br>
+    <input type ="text" name = "achievement">
 
 
+    <label>Has Laptop</label>
+    <input type="radio" name="laptop" value="Yes">Yes
+    <input type="radio" name="laptop" value="No">No </br>
 
-
-    <button type="submit">Submit</button>
-    <br>
-
+    <button type = "submit" name = "submit">Save</button>
 </form>
 </body>
 </html>
