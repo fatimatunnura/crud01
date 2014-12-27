@@ -1,101 +1,47 @@
-
 <?php
 $id = $_GET['id'];
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "academic");
-$query = "select * from student WHERE id = $id";
+    "ftflbatch2");
+$query = "select * from academic_information where id = $id";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
 <form action="update.php" method="post">
+    <input type="hidden" name="id" value="<?php echo $row['id'];?>"
+
+           label>Level of Education:</label><span>*</span>
+    <select name="levelofeducation">
+        <option value="B.Sc(Engr)"<?php if($row['levelofeducation']=="Dhaka") echo'selected';?>>B.Sc(Engr)</option>
+        <option value="diploma"><?php if($row['district']=="diploma") echo'selected';?>>diploma</option>
+        <option value="B.Sc(honrs)"<?php if($row['district']=="B.Sc(honrs)") echo'selected';?>>B.Sc(honrs)</option>
+    </select>
+
+    <label>Exam Title:</label>
+    <input type="text" name="examtitle" value="<?php echo $row['examtitle'];?>" />
 
 
+    <label>Group:</label>
+    <input type="text" name="group" value="<?php echo $row['group'];?>" />
 
-
-
-
-    <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
-
-
-    <label>Level_of_education:</label>
-    <input type="text" name="level_of_education" value="<?php echo $row['level_of_education'];?>" />
-
-    <label>Exam_title:</label>
-    <input type="text" name="exam_title" value="<?php echo $row['exam_title'];?>" />
-
-    <label>Group_Subject:</label>
-    <input type="text" name="group_subject" value="<?php echo $row['group_subject'];?>" />
-
-
-
-
-
-
-    <label>Institution:</label>
-    <input type="text" name="institution" value="<?php echo $row['institution'];?>" />
-
-    <label>Result_type:</label>
-    <input type="text" name="result_type" value="<?php echo $row['result_type'];?>" />
+    <label>Institute:</label>
+    <input type="text" name="institute" value="<?php echo $row['institute'];?>" />
 
     <label>Result:</label>
-    <input type="text" name="result" value="<?php echo $row['result'];?>" />
+    <input type="text" name="results" value="<?php echo $row['results'];?>" />
 
-    <label>Scale:</label>
+    <label>scale:</label>
     <input type="text" name="scale" value="<?php echo $row['scale'];?>" />
 
+    <label>Passing Year:</label>
+    <input type="text" name="passingyear" value="<?php echo $row['passingyear'];?>" />
 
-    <label>Passing_year:</label>
-    <input type="text" name="passing_year" value="<?php echo $row['passing_year'];?>" />
-
-    <label>Duration(in year):</label>
+    <label>duration:</label>
     <input type="text" name="duration" value="<?php echo $row['duration'];?>" />
-
 
     <label>Achievement:</label>
     <input type="text" name="achievement" value="<?php echo $row['achievement'];?>" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <button type="submit">Submit</button>
-
-
-
-
-
-
-
-
+    <button type="submit">Save</button>
 </form>

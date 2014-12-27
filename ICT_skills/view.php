@@ -1,10 +1,6 @@
 <?php
 $id = $_GET['id'];
-<<<<<<< HEAD
-$link = mysqli_connect("localhost", "root", "rini07", "FTFL01");
-=======
-$link = mysqli_connect("localhost", "root", "lict@2", "FTFL01");
->>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
+$link = mysqli_connect("localhost", "root", "lict@2", "FTFL05");
 $query = "SELECT * FROM information WHERE id = $id";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
@@ -22,13 +18,10 @@ $row = mysqli_fetch_assoc($result);
 <table border="1" width="100%">
     <tr>
         <td>ID</td>
-        <td>Training_title</td>
-        <td>Description</td>
-        <td>Institute</td>
-        <td>Address</td>
-        <td>Start_date</td>
-        <td>End_date</td>
-        <td>Course_title</td>
+
+        <td>Field_of_specification</td>
+        <td>Skill_description</td>
+        <td>Extracurricular_activites</td>
 
 
 
@@ -38,13 +31,9 @@ $row = mysqli_fetch_assoc($result);
         ?>
         <tr>
             <td><?php echo $row['id']?></td>
-            <td><?php echo $row['training_title']?></td>
-            <td><?php echo $row['description']?></td>
-            <td><?php echo $row['institute']?></td>
-            <td><?php echo $row['address']?></td>
-            <td><?php echo $row['start_date']?></td>
-            <td><?php echo $row['end_date']?></td>
-            <td><?php echo $row['course_title']?></td>
+            <td><?php echo $row['field_of_specification']?></td>
+            <td><?php echo $row['skill_description']?></td>
+            <td><?php echo $row['extracurricular_activites']?></td>
 
             <td> <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> |
                 <a href="delete.php?id=<?php echo $row['id']?>">Delete</a> |

@@ -11,7 +11,7 @@ $hometown=$_POST['hometown'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "rini07",
+    "LICT@2",
     "FTFL");
 
 

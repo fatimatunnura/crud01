@@ -2,7 +2,11 @@
 
 $link = mysqli_connect("localhost",
     "root",
+<<<<<<< HEAD
     "rini07",
+=======
+    "lict@2",
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
     "FTFL01");
 
 $query = "SELECT * FROM `information` ";
@@ -25,11 +29,19 @@ $result = mysqli_query($link, $query);
         <td>End_date</td>
         <td>Course_title</td>
 
+<<<<<<< HEAD
         </tr>
 
 
 
         <?php
+=======
+    </tr>
+
+
+
+    <?php
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
 
     foreach($result as $row){
 
@@ -51,7 +63,11 @@ $result = mysqli_query($link, $query);
 
 
 
+<<<<<<< HEAD
         <td>
+=======
+            <td>
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
                 <a href="view.php?id=<?php echo $row['id']?>">View</a> |
                 <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> |
 
@@ -69,4 +85,7 @@ $result = mysqli_query($link, $query);
     ?>
 
 </table>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271

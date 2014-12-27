@@ -11,7 +11,11 @@ $end_date = $_POST['end_date'];
 $course_title = $_POST['course_title'];
 
 
+<<<<<<< HEAD
 $link = mysqli_connect("localhost", "root", "rini07", "FTFL01");
+=======
+$link = mysqli_connect("localhost", "root", "lict@2", "FTFL01");
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
 
 // Check connection
 if (mysqli_connect_errno())

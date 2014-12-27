@@ -1,14 +1,10 @@
 <?php
-$id= $_GET['id'];
 
+$id = $_GET['id'];
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "academic");
-
-$query ="DELETE FROM `academic` . `student` WHERE `student` . `id`=$id";
-
+    "ftflbatch2");
+$query = "DELETE FROM `ftflbatch2`.`academic_information` WHERE `academic_information`.`id` = $id";
 mysqli_query($link, $query);
-
-header('location:lict.php');
-?>
+header('location:list.php');

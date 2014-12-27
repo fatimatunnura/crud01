@@ -1,6 +1,10 @@
 <?php
 $id = $_GET['id'];
+<<<<<<< HEAD
 $link = mysqli_connect("localhost", "root", "rini07", "FTFL01");
+=======
+$link = mysqli_connect("localhost", "root", "lict@2", "FTFL01");
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
 
 $query = "select * from information WHERE id = $id";
 $result = mysqli_query($link, $query);
@@ -15,7 +19,11 @@ $row = mysqli_fetch_assoc($result);
 
 <form action="update.php" method="post">
 
+<<<<<<< HEAD
 <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
+=======
+    <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
 
     <label>Training_title</label>
     <input type="text" name="training_title" value="<?php echo $row['training_title'];?>" />
@@ -51,7 +59,11 @@ $row = mysqli_fetch_assoc($result);
         <option <?php if ($row['institute'] == "Princeton_University") echo 'selected'; ?> value="Princeton_University">Princeton_University</option>
         <option <?php if ($row['institute'] == "Yale_University") echo 'selected'; ?> value="Yale_University">Yale_University</option>
         <option <?php if ($row['institute'] == "Stanford_University") echo 'selected'; ?> value="Stanford_University">Stanford_University</option>
+<<<<<<< HEAD
         </select>
+=======
+    </select>
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
     <br>
 
 
@@ -60,7 +72,11 @@ $row = mysqli_fetch_assoc($result);
     Dhaka<input type="radio" name="address" <?php if($row['address'] == "Diploma") echo 'checked'; ?> value="Dhaka">
     Khulna<input type="radio" name="address" <?php if($row['address'] == "Bachelor") echo 'checked'; ?> value="Khulna">
     Rajshahi<input type="radio" name="address" <?php if($row['address'] == "Masters") echo 'checked'; ?> value="Rajshahi">
+<<<<<<< HEAD
    Chittagong<input type="radio" name="address" <?php if($row['address'] == "Doctoral") echo 'checked'; ?> value="Chittagong">
+=======
+    Chittagong<input type="radio" name="address" <?php if($row['address'] == "Doctoral") echo 'checked'; ?> value="Chittagong">
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
     <br>
 
 
@@ -72,4 +88,7 @@ $row = mysqli_fetch_assoc($result);
 </body>
 </html>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271

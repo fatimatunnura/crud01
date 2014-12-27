@@ -1,55 +1,17 @@
+
 <?php
-$level_of_education= $_POST['level_of_education'];
-$exam_title=$_POST['exam_title'];
-$group_subject=$_POST['group_subject'];
-$institution=$_POST['institution'];
-$result_type=$_POST['result_type'];
-$result=$_POST['result'];
-$scale=$_POST['scale'];
-$passing_year=$_POST['passing_year'];
-$duration=$_POST['duration'];
-$achievement=$_POST['achievement'];
+$levelofeducation = $_POST['levelofeducation'];
+$examtitle = $_POST['examtitle'];
+$group= $_POST['group'];
+$institute = $_POST['institute'];
+$result = $_POST['results'];
+$scale = $_POST['scale'];
+$passingyear = $_POST['passingyear'];
+$duration= $_POST['duration'];
+$achievement = $_POST['achievement'];
+$link = mysqli_connect("localhost","root","lict@2","ftflbatch2");
+$query = "INSERT INTO `ftflbatch2`.`academic_information` (`levelofeducation`, `examtitle`, `group`, `institute`, `results`, `scale`,`passingyear`,`duration`,`achievement`)
+VALUES ('$levelofeducation', '$examtitle', '$group', '$institute','$results', '$scale', '$passingyear','$duration','$achievement');";
 
-
-
-$link = mysqli_connect("localhost",
-    "root",
-    "lict@2",
-    "academic");
-
-
-
-$query = "INSERT INTO `academic`.`student` (
-
-`level_of_education`,
-`exam_title`,
-`group_subject`,
-`institution`,
-`result_type`,
-`result`,
-`scale`,
-`passing_year`,
-`duration`,
-`achievement`
-
-)
-VALUES (
-     '$level_of_education',
-     '$exam_title',
-     '$group_subject',
-     '$institution',
-     '$result_type',
-     '$result',
-     '$scale',
-      '$passing_year',
-      '$duration',
-      '$achievement'
-
-
-)";
-
-mysqli_query($link, $query) or mysql_error();
-echo $query;
-
-header('location:lict.php');
-?>
+mysqli_query($link, $query);
+header('location:list.php');

@@ -1,14 +1,11 @@
 <?php
-$id= $_GET['id'];
+////This is a crud application with delete.php file
 
-$link = mysqli_connect("localhost",
-    "root",
-    "lict@2",
-    "contact_info");
+$con=mysqli_connect("localhost","root","lict@2","contactinfo") or die("Error: ".mysqli_error($con));
 
-$query ="DELETE FROM `contact_info` . `student` WHERE `student` . `id`=$id";
-
-mysqli_query($link, $query);
-
-header('location:list.php');
+$id=$_GET['id'];
+$query="DELETE FROM `contactinfo`.`information` WHERE `information`.`id` = $id";
+mysqli_query($con,$query);
+header('location: list.php');
+mysqli_close($con);
 ?>

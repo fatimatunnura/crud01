@@ -2,9 +2,17 @@
 
 $link = mysqli_connect("localhost",
     "root",
+<<<<<<< HEAD
     "rini07",
     "FTFL02");
 
+=======
+    "lict@2",
+    "FTFL02");
+
+
+
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
 $query = "SELECT * FROM `information` ";
 
 $result = mysqli_query($link, $query);
@@ -68,4 +76,7 @@ $result = mysqli_query($link, $query);
     ?>
 
 </table>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0efdbdf9d36fb2d4f8bbf5159614091d8f83271
