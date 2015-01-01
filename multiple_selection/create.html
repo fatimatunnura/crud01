@@ -1,0 +1,56 @@
+
+<html>
+<body>
+<form action="add.php"method = 'POST'>
+    <h3><B> Multiple_Selection :</B></h3>
+<!--
+    <label>Full_name </label>:</label>
+    <input type ="text" name = "full_name">
+    <br /><br />-->
+
+    <label>Hobby : </label>
+    <br>
+    <input type="checkbox" name="h_reading" value="reading"> Reading<br>
+    <input type="checkbox" name="h_travelling" value="travelling" > Travelling<br>
+    <input type="checkbox" name="h_gardening" value="gardening">Gardening<br>
+    <input type="checkbox" name="h_other" value="other" > Others<br>
+    <br /><br />
+
+
+    <label>Favourite food </label>
+    <br>
+    <input type="checkbox" name="food[]" value="noodles"> Noodles<br>
+    <input type="checkbox" name="food[]" value="barger" > Barger<br>
+    <input type="checkbox" name="food[]" value="sandwitch">Sandwitch<br>
+    <input type="checkbox" name="food[]" value="other" > Others<br>
+    <br /><br />
+
+    <label>Your preferred job location:</label>
+    <select name="city[]" multiple="multiple">
+    <option value="Dhaka">Dhaka</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Rangpur">Rangpur
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Chilmary">Chilmary</option>
+        <option value="Dhanmondi">Dhanmondi</option>
+        <option value="Chittagono">Chittagono</option>
+
+
+
+
+
+
+
+    </select>
+
+
+    <br /><br />
+
+
+    <button type = "submit" name = "submit">Save</button>
+    <button type = "reset" name = "reset">Cancel</button>
+
+</form>
+</body>
+</html>
+<a href="list.php">Go to List</a>
